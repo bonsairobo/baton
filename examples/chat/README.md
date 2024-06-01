@@ -1,3 +1,6 @@
+An ephemeral chat room. Users Alice and Bob connect to the same room and
+exchange some messages.
+
 To run the example, do:
 
 ```sh
