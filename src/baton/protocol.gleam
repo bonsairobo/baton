@@ -37,7 +37,7 @@
 //// ...
 //// to: <peer_id_N>
 ////
-//// <payload>
+//// <body>
 //// ```
 ////
 //// OR
@@ -45,7 +45,7 @@
 //// ```text
 //// broadcast:
 ////
-//// <payload>
+//// <body>
 //// ```
 ////
 //// where
@@ -55,7 +55,7 @@
 ////   3. The "broadcast" header indicates that this message should be sent to
 ////      all peers in the same room. The value of this header is empty, and
 ////      that's OK.
-////   4. `payload` is the actual content of the message, in any format desired
+////   4. `body` is the actual content of the message, in any format desired
 ////      by the application.
 ////
 //// ## Received Format
@@ -65,7 +65,7 @@
 //// ```text
 //// message_from: <peer_id>
 ////
-//// <payload>
+//// <body>
 //// ```
 ////
 //// A "peer joined" event sent from the relay:
