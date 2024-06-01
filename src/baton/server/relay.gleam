@@ -100,6 +100,7 @@ fn handle_message(
       // Send the message to all recipients.
       let dest_subjects = case to {
         Broadcast ->
+          // Don't mirror the message back to the sender.
           list.filter_map(dict.to_list(room.peers), fn(kv) {
             let #(peer_id, info) = kv
             case peer_id == from {
